@@ -1,0 +1,138 @@
+body{
+    background-color: #E0FFFF;
+}
+
+.first{
+    width: 1118px;
+    background-color: white;
+}
+
+#imageFirst{
+    width:900px;
+    height:600px;
+    margin-left: 100px;
+}
+
+#imageTwo{
+    width: 300px;
+    height: 300px;
+}
+
+#imageThird{
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: -30px;
+}
+
+#imageFour{
+    width: 400px;
+    height: 400px;
+}
+
+#svg1{
+    background: none;
+    width: 900px;
+    height: 610px;
+    margin-left: -320px;
+    margin-top: -30px;
+}
+
+#svg2{
+    background: none;
+    width: 900px;
+    height: 610px;
+    margin-left: -320px;
+    margin-top: -15px;
+}
+
+
+.title {
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Abril Fatface', cursive;
+    margin-top: -400px;
+    margin-left: 270px;
+    color: #263A4F;
+}
+
+#one {
+    width: 440px;
+    height: 100px;
+    margin-left: 330px;
+    margin-top: 250px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #263A4F;
+}
+
+#head1 {
+    margin-top: 80px;
+    font-size: 35px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #263A4F;
+    margin-left: 300px;
+}
+
+.buttonbox2 {
+    width: 700px;
+    height: 150px;
+}
+
+.svgBox {
+    background: none;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+
+img#myaverageImage {
+    width: 600px;
+    height: 371px;
+}
+
+img#myImage {
+    width: 300px;
+    height: 523px;
+}
+
+img#myImage2 {
+    width: 300px;
+    height: 523px;
+}
+
+img#myImage3 {
+    width: 300px;
+    height: 523px;
+}
+
+img#myImage4 {
+    width: 300px;
+    height: 523px;
+}
+
+img#myImage5 {
+    width: 300px;
+    height: 523px;
+}
+
+img#myImage6 {
+    width: 300px;
+    height: 523px;
+}
+
+img#myImage7 {
+    width: 300px;
+    height: 523px;
+}
+
+img#myImage8 {
+    width: 300px;
+    height: 523px;
+}
+
+
+
