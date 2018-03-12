@@ -1,4 +1,4 @@
-var width = document.getElementById('svg1').clientWidth;
+var width = document.getElementById('svg1');
 var height = document.getElementById('svg1').clientHeight;
 
 var width2 = document.getElementById('svg2').clientWidth;
