@@ -1,4 +1,4 @@
-var width = document.getElementById('svg1');
+var width = document.getElementById('svg1').clientWidth;
 var height = document.getElementById('svg1').clientHeight;
 
 var width2 = document.getElementById('svg2').clientWidth;
@@ -20,9 +20,9 @@ var svg2 = d3.select('#svg2')
     .append('g')
     .attr('transform', 'translate(' + marginLeft + ',' + marginTop + ')');
 
-var svg3 = d3.select('#svg3')
-    .append('g')
-    .attr('transform', 'translate(' + marginLeft + ',' + marginTop + ')');
+//var svg3 = d3.select('#svg3')
+//    .append('g')
+//    .attr('transform', 'translate(' + marginLeft + ',' + marginTop + ')');
 
 var albersProjection = d3.geoAlbers()
     .scale(400000)
@@ -30,7 +30,6 @@ var albersProjection = d3.geoAlbers()
     .center( [0, 42.313] )
     .translate([(width/3.7), (height/0.9)]);
 
-var nestedData = [];
 
 path = d3.geoPath()
     .projection(albersProjection);
@@ -41,8 +40,8 @@ path = d3.geoPath()
 queue()
     .defer(d3.json, "js/eastboston.json")
     .defer(d3.json, "js/street.json")
-    .defer(d3.csv, "csv/eastboston-countrypopulation.csv")
-    .await(function (err, mapData, streetData, populationData) {
+    .defer(d3.csv, "csv/EastBostonChurch.csv")
+    .await(function (err, mapData, streetData, churchData) {
 
 
         svg.selectAll("path")
@@ -51,7 +50,7 @@ queue()
             .append("path")
             .attr("d", path)
             .attr("class", "feature")
-            .attr('fill', "white");
+            .attr('fill', "blue");
 
         svg2.selectAll("path")
             .data(streetData.features)

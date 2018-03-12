@@ -1,17 +1,23 @@
 body{
- background-color: blue;
+background-color: #0FA0CE;
 }
 
 .first{
-    width: 1118px;
-    background-color: white;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #imageFirst{
     width:900px;
     height:600px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.line{
+    width: auto;
+    height: 5px;
+    background-color: black;
+    margin-top: 50px;
 }
 
 #imageTwo{
@@ -35,16 +41,12 @@ body{
     background: none;
     width: 900px;
     height: 610px;
-    margin-left: -320px;
-    margin-top: -30px;
 }
 
 #svg2{
     background: none;
     width: 900px;
     height: 610px;
-    margin-left: -320px;
-    margin-top: -15px;
 }
 
 
@@ -87,52 +89,6 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px;
-}
-
-
-img#myaverageImage {
-    width: 600px;
-    height: 371px;
-}
-
-img#myImage {
-    width: 300px;
-    height: 523px;
-}
-
-img#myImage2 {
-    width: 300px;
-    height: 523px;
-}
-
-img#myImage3 {
-    width: 300px;
-    height: 523px;
-}
-
-img#myImage4 {
-    width: 300px;
-    height: 523px;
-}
-
-img#myImage5 {
-    width: 300px;
-    height: 523px;
-}
-
-img#myImage6 {
-    width: 300px;
-    height: 523px;
-}
-
-img#myImage7 {
-    width: 300px;
-    height: 523px;
-}
-
-img#myImage8 {
-    width: 300px;
-    height: 523px;
 }
 
 
