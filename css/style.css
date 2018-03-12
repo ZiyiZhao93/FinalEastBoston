@@ -1,5 +1,5 @@
 body{
-    background-color: #E0FFFF;
+
 }
 
 .first{
@@ -10,7 +10,8 @@ body{
 #imageFirst{
     width:900px;
     height:600px;
-    margin-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #imageTwo{
