@@ -4,8 +4,8 @@ var height = document.getElementById('svg1').clientHeight;
 var width2 = document.getElementById('svg2').clientWidth;
 var height2 = document.getElementById('svg2').clientHeight;
 
- var width3 = document.getElementById('svg3').clientWidth;
- var height3 = document.getElementById('svg3').clientHeight;
+ var width3 = document.getElementById('svg3').clientWidth*'0.5';
+ var height3 = document.getElementById('svg3').clientHeight*'0.5';
 
 var marginLeft = 0;
 var marginTop = 0;
@@ -53,7 +53,7 @@ queue()
             .append("path")
             .attr("d", path)
             .attr("class", "feature")
-            .attr('fill', "blue");
+            .attr('fill', "#F0F8FF");
 
         svg2.selectAll("path")
             .data(streetData.features)
@@ -65,10 +65,9 @@ queue()
             .attr("stroke-width", 1)
             .attr("fill", "none");
 
-        var loadData = nestedData = d3.nest()
-            .key()
+        var loadData = d3.nest()
             .entries(languageData);
-
+console.log(loadData);
 
         svg3.append("g")
             .attr('class','xaxis')
@@ -83,10 +82,10 @@ queue()
 
     });
 
-function drawCharts(pointData) {
+function drawCharts(lineData) {
 
-    scaleX.domain(pointData.map(function(d){return d.language;}));
-    scaleY.domain(pointData.map(function(d){return +d.number}));
+    scaleX.domain(lineData.map(function(d){return d.language;}));
+    scaleY.domain(lineData.map(function(d){return +d.number;}));
 
     d3.selectAll('.xaxis')
         .call(d3.axisBottom(scaleX));
@@ -95,12 +94,12 @@ function drawCharts(pointData) {
         .call(d3.axisLeft(scaleY));
 
     var rects = svg3.selectAll('.bars')
-        .data(pointData, function(d){return d.language;});
+        .data(lineData, function(d){return d.language;});
 
 
     rects
         .transition()
-        .duration(100)
+        .duration(50)
         .attr('x',function(d){
             return scaleX(d.language);
         })

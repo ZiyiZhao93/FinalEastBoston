@@ -39,20 +39,23 @@ body{
 
 #svg1{
     background: none;
-    width: 900px;
+    width: 500px;
     height: 610px;
+    margin-left: -250px;
 }
 
 #svg2{
     background: none;
-    width: 900px;
+    width: 500px;
     height: 610px;
+    margin-top: -610px;
+    margin-left: -505px;
 }
 
 #svg3{
     background: none;
-    width: 900px;
-    height: 610px;
+    width: 600px;
+    height: 500px;
 }
 
 
@@ -94,7 +97,6 @@ body{
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px;
 }
 
 
