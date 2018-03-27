@@ -1,4 +1,3 @@
-
 // set the dimensions and margins of the graph
 var margin = {top: 20, right: 20, bottom: 30, left: 230},
     width = 500 - margin.left - margin.right,
@@ -15,7 +14,7 @@ var y = d3.scaleBand()
 // append the svg object to the body of the page
 // append a 'group' element to 'svg'
 // moves the 'group' element to the top left margin
-var svg = d3.select("#svg5")
+var svg4 = d3.select("#svg4")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -38,23 +37,22 @@ d3.csv("csv/ChurchDenomination.csv", function(error, data) {
   y.domain(data.map(function(d) { return d.denomination; }));
 
   // append the rectangles for the bar chart
-  svg.selectAll(".bar")
+  svg4.selectAll(".bar")
       .data(data)
-    .enter().append("rect")
+      .enter().append("rect")
       .attr("class", "bar")
-      //.attr("x", function(d) { return x(d.number); })
       .attr("width", function(d) { return x(d.number);})
       .attr("y", function(d) { return y(d.denomination); })
       .attr("height", y.bandwidth())
       .attr('fill',"mediumslateblue");
 
   // add the x Axis
-  svg.append("g")
+  svg4.append("g")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x));
 
   // add the y Axis
-  svg.append("g")
+  svg4.append("g")
       .call(d3.axisLeft(y));
 
 });

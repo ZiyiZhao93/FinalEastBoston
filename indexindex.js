@@ -12,8 +12,6 @@ var marginTop = 0;
 
 var clicked = true;
 
-// var nestedData = [];
-
 var svg = d3.select('#svg1')
     .append('g')
     .attr('transform', 'translate(' + marginLeft + ',' + marginTop + ')');
@@ -52,7 +50,7 @@ queue()
             .enter()
             .append("path")
             .attr("d", path)
-            .attr("class", "feature")
+            .attr("class", "backcolor")
             .attr('fill', "#F0F8FF");
 
         svg2.selectAll("path")
@@ -65,77 +63,7 @@ queue()
             .attr("stroke-width", 1)
             .attr("fill", "none");
 
-        var loadData = d3.nest()
-            .entries(languageData);
-            console.log(loadData);
-
-        svg3.append("g")
-            .attr('class','xaxis')
-            .attr('transform','translate(0,'+ (height3-2*marginTop) +')')
-            .call(d3.axisBottom(scaleX));
-
-        svg3.append("g")
-            .attr('class', 'yaxis')
-            .call(d3.axisLeft(scaleY));
-
-        drawCharts(loadData);
-
     });
-
-function drawCharts(lineData) {
-
-    scaleX.domain(lineData.map(function(d){return d.language;}));
-    scaleY.domain(lineData.map(function(d){return +d.number;}));
-    console.log(lineData);
-
-    d3.selectAll('.xaxis')
-        .call(d3.axisBottom(scaleX));
-
-    d3.selectAll('.yaxis')
-        .call(d3.axisLeft(scaleY));
-
-    var rects = svg3.selectAll('.bars')
-        .data(lineData, function(d){return d.number;});
-
-
-    rects
-        .transition()
-        .duration(50)
-        .attr('x',function(d){
-            return scaleX(d.language);
-        })
-        .attr('y',function(d){
-            return scaleY(+d.number);
-        })
-        .attr('width',function(d){
-            return scaleX.bandwidth();
-        })
-        .attr('height',function(d){
-            return height3-2*marginTop - scaleY(+d.number);
-        })
-        .attr('fill',"mediumslateblue");
-
-    rects
-        .enter()
-        .append('rect')
-        .attr('class','bars')
-        .attr('fill',"mediumslateblue")
-        .attr('id',function (d) {return d.language})
-        .attr('x',function(d){
-            return scaleX(d.language);
-        })
-        .attr('y',function(d){
-            return scaleY(+d.number);
-        })
-        .attr('width',function(d){
-            return scaleX.bandwidth();
-        })
-        .attr('height',function(d){
-            return height3-2*marginTop - scaleY(+d.number);
-        });
-
-
-}
 
 
 

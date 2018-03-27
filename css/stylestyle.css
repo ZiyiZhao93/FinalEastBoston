@@ -2,66 +2,88 @@ body{
 
 }
 
+.firstp {
+    width: 800px;
+    height: auto;
+    margin-top: -630px;
+    margin-left: 100px;
+}
+
+h1 {
+    margin-bottom: 300px;
+}
+
+#front {
+    color: white;
+}
+
 .first{
     width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #imageFirst{
-    width:900px;
-    height:600px;
+    width:1300px;
+    height:650px;
+    margin-left: -70px;
 }
 
 .line{
     width: auto;
     height: 5px;
     background-color: black;
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 30px;
 }
 
-#imageTwo{
-    width: 300px;
-    height: 300px;
+.box1 {
+    width: 1000px;
+    height: auto;
+
 }
 
-#imageThird{
-    width: 200px;
-    height: 200px;
-    margin-left: 100px;
-    margin-top: -30px;
-}
-
-#imageFour{
-    width: 400px;
-    height: 400px;
+.svgBox {
+    background: none;
+    width: 800px;
+    height: 480px;
 }
 
 #svg1{
     background: none;
     width: 500px;
     height: 610px;
-    margin-left: -250px;
+    margin-left: -180px;
+    margin-top: -50px;
 }
 
 #svg2{
     background: none;
     width: 500px;
     height: 610px;
-    margin-top: -610px;
-    margin-left: -505px;
+    margin-top: -650px;
+    margin-left: -503px;
+}
+
+.box2 {
+    width: 500px;
+    height: auto;
 }
 
 #svg3{
     background: none;
     width: 600px;
-    height: 500px;
+    height: 550px;
+    margin-top: 50px;
+}
+
+.box3 {
+    width: 500px;
+    height: auto;
 }
 
 #svg4{
     background: none;
     width: 600px;
-    height: 500px;
+    height: 400px;
 }
 
 
@@ -96,13 +118,6 @@ body{
 .buttonbox2 {
     width: 700px;
     height: 150px;
-}
-
-.svgBox {
-    background: none;
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .svgBox2 {
