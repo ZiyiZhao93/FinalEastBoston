@@ -45,7 +45,7 @@ d3.csv("csv/ChurchLanguage.csv", function(error, data) {
       .attr("width", x2.bandwidth())
       .attr("y", function(d) { return y2(d.number); })
       .attr("height", function(d) { return height - y2(d.number); })
-      .attr('fill',"mediumslateblue");
+      .attr('fill',"lightskyblue");
 
   // add the x Axis
   svg3.append("g")

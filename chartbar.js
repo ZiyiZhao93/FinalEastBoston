@@ -44,7 +44,7 @@ d3.csv("csv/ChurchDenomination.csv", function(error, data) {
       .attr("width", function(d) { return x(d.number);})
       .attr("y", function(d) { return y(d.denomination); })
       .attr("height", y.bandwidth())
-      .attr('fill',"mediumslateblue");
+      .attr('fill',"lightskyblue");
 
   // add the x Axis
   svg4.append("g")
