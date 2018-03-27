@@ -12,7 +12,7 @@ var marginTop = 0;
 
 var clicked = true;
 
-var nestedData = [];
+// var nestedData = [];
 
 var svg = d3.select('#svg1')
     .append('g')
@@ -44,8 +44,7 @@ queue()
     .defer(d3.json, "js/street.json")
     .defer(d3.csv, "csv/EastBostonChurch.csv")
     .defer(d3.csv, "csv/ChurchLanguage.csv")
-    .defer(d3.csv, "ChurchDenomination.csv")
-    .await(function (err, mapData, streetData, churchData, languageData, denominationData) {
+    .await(function (err, mapData, streetData, churchData, languageData) {
 
 
         svg.selectAll("path")
@@ -79,11 +78,6 @@ queue()
             .attr('class', 'yaxis')
             .call(d3.axisLeft(scaleY));
 
-        var nestedData = d3.nest()
-            .entries(denominationData);
-            console.log(nestedData);
-
-
         drawCharts(loadData);
 
     });
@@ -92,6 +86,7 @@ function drawCharts(lineData) {
 
     scaleX.domain(lineData.map(function(d){return d.language;}));
     scaleY.domain(lineData.map(function(d){return +d.number;}));
+    console.log(lineData);
 
     d3.selectAll('.xaxis')
         .call(d3.axisBottom(scaleX));
@@ -141,8 +136,6 @@ function drawCharts(lineData) {
 
 
 }
-
-
 
 
 
