@@ -58,6 +58,12 @@ body{
     height: 500px;
 }
 
+#svg4{
+    background: none;
+    width: 600px;
+    height: 500px;
+}
+
 
 .title {
     width: 600px;
@@ -99,5 +105,18 @@ body{
     margin-right: auto;
 }
 
+.svgBox2 {
+    background: none;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.svgBox3 {
+    background: none;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 

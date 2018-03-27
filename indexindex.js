@@ -44,7 +44,8 @@ queue()
     .defer(d3.json, "js/street.json")
     .defer(d3.csv, "csv/EastBostonChurch.csv")
     .defer(d3.csv, "csv/ChurchLanguage.csv")
-    .await(function (err, mapData, streetData, churchData, languageData) {
+    .defer(d3.csv, "ChurchDenomination.csv")
+    .await(function (err, mapData, streetData, churchData, languageData, denominationData) {
 
 
         svg.selectAll("path")
@@ -77,6 +78,11 @@ queue()
         svg3.append("g")
             .attr('class', 'yaxis')
             .call(d3.axisLeft(scaleY));
+
+        var nestedData = d3.nest()
+            .entries(denominationData);
+            console.log(nestedData);
+
 
         drawCharts(loadData);
 
