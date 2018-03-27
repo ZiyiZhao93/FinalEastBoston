@@ -67,7 +67,7 @@ queue()
 
         var loadData = d3.nest()
             .entries(languageData);
-console.log(loadData);
+            console.log(loadData);
 
         svg3.append("g")
             .attr('class','xaxis')
@@ -94,7 +94,7 @@ function drawCharts(lineData) {
         .call(d3.axisLeft(scaleY));
 
     var rects = svg3.selectAll('.bars')
-        .data(lineData, function(d){return d.language;});
+        .data(lineData, function(d){return d.number;});
 
 
     rects
