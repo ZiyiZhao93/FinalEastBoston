@@ -19,8 +19,7 @@ var svg4 = d3.select("#svg4")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .append("g")
-    .attr("transform", 
-          "translate(" + margin.left + "," + margin.top + ")");
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // get the data
 d3.csv("csv/ChurchDenomination.csv", function(error, data) {
@@ -56,4 +55,3 @@ d3.csv("csv/ChurchDenomination.csv", function(error, data) {
       .call(d3.axisLeft(y));
 
 });
-

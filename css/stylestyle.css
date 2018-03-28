@@ -47,7 +47,7 @@ h1 {
     height: 480px;
 }
 
-#svg1{
+#svg0{
     background: none;
     width: 500px;
     height: 610px;
@@ -55,7 +55,7 @@ h1 {
     margin-top: -50px;
 }
 
-#svg2{
+#svg1{
     background: none;
     width: 500px;
     height: 610px;
@@ -68,62 +68,6 @@ h1 {
     height: auto;
 }
 
-#svg3{
-    background: none;
-    width: 600px;
-    height: 550px;
-    margin-top: 50px;
-}
-
-.box3 {
-    width: 500px;
-    height: auto;
-}
-
-#svg4{
-    background: none;
-    width: 600px;
-    height: 600px;
-}
-
-.box4 {
-    width: 500px;
-    height: auto;
-}
-
-.title {
-    width: 600px;
-    height: 100px;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Abril Fatface', cursive;
-    margin-top: -400px;
-    margin-left: 270px;
-    color: #263A4F;
-}
-
-#one {
-    width: 440px;
-    height: 100px;
-    margin-left: 330px;
-    margin-top: 250px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: #263A4F;
-}
-
-#head1 {
-    margin-top: 80px;
-    font-size: 35px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: #263A4F;
-    margin-left: 300px;
-}
-
-.buttonbox2 {
-    width: 700px;
-    height: 150px;
-}
-
 .svgBox2 {
     background: none;
     width: 800px;
@@ -131,19 +75,48 @@ h1 {
     margin-right: auto;
 }
 
+#svg2{
+    background: none;
+    width: 500px;
+    height: 610px;
+}
+
+.box3 {
+    width: 500px;
+    height: auto;
+}
+
 .svgBox3 {
     background: none;
-    width: 800px;
+    width: 1000px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+#svg3{
+    background: none;
+    width: 700px;
+    height: 350px;
+}
+
+.box4 {
+    width: 500px;
+    height: auto;
 }
 
 .svgBox4 {
     background: none;
     width: 1000px;
-    height: 600px;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+#svg4{
+    background: none;
+    width: 600px;
+    height: 600px;
 }
 
 .link {
