@@ -161,32 +161,32 @@ ul#menu li
 
 h1.EastBoston_head {
     font-family: "GrifoL-Bold","Georgia",serif;
-    font-size: 8rem;
-    line-height: 7rem;
-    margin-top: 10%;
+   
     color: white;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 h2.EastBoston_head {
     font-family: "GrifoL-Bold","Georgia",serif;
-    font-size: 3.4rem;
-    line-height: 3.6rem;
     color:#666;
     margin-top: -1rem;
 }
 
 h5.EastBoston_byline {
     font-family: "BentonSansCond-Bold","Helvetica-Bold",sans-serif;
-    font-size: 1.6rem;
-    line-height: 3rem;
+   
+
     text-transform: uppercase;
     letter-spacing: 0.2rem;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3rem;
 }
 
 div.EastBoston p {
     font-family: "BentonSansCond-Regular","Helvetica",sans-serif;
-    font-size: 1.8rem;
-    line-height: 3rem;
 }
 
 a   {

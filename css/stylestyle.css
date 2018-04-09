@@ -2,49 +2,51 @@ body{
 
 }
 
-.firstp {
-    width: 800px;
-    height: auto;
-    margin-top: -630px;
-    margin-left: 100px;
+.intro-header{
+    width: 100%;
+    padding-top: 300px;
+    background: url(../images/churches.jpg)no-repeat center center;
+    background-size: cover;
+
 }
 
-h1 {
-    margin-bottom: 300px;
+.words{
+    width: 100%;
+    height: 100%;
+    margin-top: -100px;
+}
+
+#title {
+
 }
 
 #front {
+    margin-left: 10%;
+    margin-right: 10%;
     color: white;
 }
 
-.first{
-    width: 1000px;
-}
-
-#imageFirst{
-    width:1300px;
-    height:650px;
-    margin-left: -70px;
+#byname{
+  
 }
 
 .line{
     width: auto;
     height: 5px;
     background-color: black;
-    margin-top: 100px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .box1 {
-    width: 1000px;
+    width: 100%;
     height: auto;
-
 }
 
 .svgBox {
     background: none;
-    width: 900px;
-    height: 630px;
+    width: 100%;
+    height: 570px;
     margin-left: -170px;
 }
 
@@ -52,52 +54,54 @@ h1 {
 
 #svg0{
     background: none; 
-    width: 500px;
-  
+    width: 100%;
+    float: left;
+    margin-left: -5px;
 
 }
 
 #svg1{
     background: none;
-    width: 500px;
-
-    margin-left: -500px;
+    width: 100%;
+    float: left;
+    margin-left: -775px;
 }
 
 #svg4{
     background: none;
-    width: 500px;
-    margin-left: -500px;
+    width: 100%;
+    margin-left: -775px;
  
 
 }
 
 .box2 {
-    width: 1000px;
+    width: 100%;
     height: auto;
+    margin-top: 30px;
 }
 
 .svgBox2 {
     background: none;
-    width: 1000px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
 #svg2{
     background: none;
-    width: 700px;
+    width: 100%;
     height: 610px;
 }
 
 .box3 {
-    width: 1000px;
+    width: 100%;
     height: auto;
 }
 
 .svgBox3 {
     background: none;
-    width: 1000px;
+    width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -105,7 +109,7 @@ h1 {
 
 #svg3{
     background: none;
-    width: 700px;
+    width: 100%;
     height: 400px;
 }
 
